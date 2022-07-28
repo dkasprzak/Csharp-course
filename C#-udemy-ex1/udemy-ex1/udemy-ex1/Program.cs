@@ -6,8 +6,7 @@ namespace UdemyEx1
     {
         static void Main(string[] args)
         {
-            /*
-            Console.WriteLine("insert numbers:");
+            Console.WriteLine("Insert numbers:");
 
             int userinput = int.Parse(Console.ReadLine());
 
@@ -27,44 +26,14 @@ namespace UdemyEx1
                 userinput = int.Parse(Console.ReadLine());
             }
 
-            Console.WriteLine($"sum of numbers = {sum}");
+            Console.WriteLine($"Sum of numbers = {sum}");
             if (maxvalue != null)
             {
-                Console.WriteLine($"max value = {maxvalue}");
+                Console.WriteLine($"Max value = {maxvalue}");
             }
             else
             {
-                Console.WriteLine("max value = no values inserted!");
-            }
-
-            */
-
-            Console.WriteLine("------------------------------------------------------------------");
-
-            Console.WriteLine("Insert value:");
-            int doValue = 0; 
-            
-            int sum2 = 0;
-
-            int? maxValue2 = null;
-
-            do
-            { 
-                doValue = int.Parse(Console.ReadLine());
-                if (maxValue2 == null || doValue > maxValue2)
-                {
-                    maxValue2 = doValue;
-                }
-                sum2 += doValue;
-            } while (doValue != 0);
-            Console.WriteLine($"sum = {sum2}");
-            if (maxValue2 == 0)
-            {
-                Console.WriteLine($"No values inserted");
-            }
-            else
-            {
-                Console.WriteLine($"max value = {maxValue2}");
+                Console.WriteLine("Max value = No values inserted");
             }
         }
     }
